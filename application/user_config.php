@@ -29,10 +29,10 @@ define('DB_PREFIX',		'xsmart_');
 define('DB_NAME',		'zuxue');
 ///----------------邮件@@liu
 		define('SYS_SMTP_HOST', 'smtp.163.com');
-		define('SYS_SMTP_FROM', 'zhuzffeng@163.com');
+		define('SYS_SMTP_FROM', 'zhufeng@163.com');
 		define('SYS_SMTP_TITLE', 'SNS');
 		define('SYS_SMTP_USER', 'zhuzffeng');
-		define('SYS_SMTP_PASS', 'IMzhuZFF528');
+		define('SYS_SMTP_PASS', '123456');
 		define('SYS_SMTP_PORT', '25');
 //memcached 
 define('MC_HOST', 			'');
