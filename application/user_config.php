@@ -2,7 +2,7 @@
 // 前缀
 define('SITE_PREFIX','');
 //当前文件所在目录路径
-define('W_BASE_URL_PATH','http://cp01-rdqa-dev338-zhufeng04.epc.baidu.com:8910/');
+define('W_BASE_URL_PATH','http://127.0.0.1:8910/');
 
 define('WB_AKEY',			'12345');
 
