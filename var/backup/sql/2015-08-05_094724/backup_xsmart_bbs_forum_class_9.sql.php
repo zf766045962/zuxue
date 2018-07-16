@@ -1,0 +1,3 @@
+<?php exit("Access deny");?>
+TRUNCATE TABLE `xsmart_bbs_forum_class`;
+INSERT INTO `xsmart_bbs_forum_class`(`classid`,`classname`,`classurl`,`parentid`,`parentpath`,`depth`,`rootid`,`child`,`previd`,`nextid`,`orderid`,`readme`,`elite`,`ontop`,`Author`,`keyword`,`description`,`lmorder`,`uunique`,`pictureurl`,`statue`,`modelid`) VALUES ("1","魅族科技","","0","0","0","1","0","0","2","0","","0","0","0","","","10","","","0","61"),("2","板块","","0","0","0","2","0","1","3","0","","0","0","0","","","0","plate","","0","61"),("3","魅友家","","0","0","0","3","0","2","0","0","","0","0","0","","","0","home","","0","61");

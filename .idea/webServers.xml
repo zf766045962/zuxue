@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="28a6f3d3-518f-4ddc-98e5-499e43362af8" name="zuxue" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/Volumes/zhufeng04/odp_swoole/zixue/zuxue" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

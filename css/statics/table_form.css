@@ -1,0 +1,26 @@
+.input-text,input,input.date,input.endDate,.input-focus{height:18px;margin:0 5px 0 0;padding:2px 0 2px 5px;
+border: 1px solid #CCC; font-family: Verdana, Geneva, sans-serif,"宋体";font-size:12px;}
+textarea{
+	margin:1 5px 0 0;
+	padding:2px 0 2px 5px;
+	border: 1px solid #CCC;
+    font-family: Verdana, Geneva, sans-serif,"宋体";
+	font-size:12px;
+}
+.textarea_on{
+	margin:1 5px 0 0;
+	padding:2px 0 2px 5px;
+	border: 1px solid #09F;
+    font-family: Verdana, Geneva, sans-serif,"宋体";
+	font-size:12px;
+}
+.input_on{height:18px;margin:0 5px 0 0;padding:2px 0 2px 5px;
+border: 1px solid #09F; font-family: Verdana, Geneva, sans-serif,"宋体";font-size:12px;}
+.input-focus{background: #FFF url(../simages/admin_img/input_focus.png) repeat-x; border-color:#afcee6;font-size:12px;}
+input.date,input.endDate{background: #fff url(../simages/admin_img/input_date.png) no-repeat right 3px; padding-right:18px;font-size:12px;}
+.date_on{background: #fff url(../simages/admin_img/input_date.png) no-repeat right 3px; padding-right:18px;font-size:12px;border: 1px solid #09F;}
+
+/*activity_list.tpl.php*/
+main-cont .list_table{
+	border:1px solid #09F;
+	}

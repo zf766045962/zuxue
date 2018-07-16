@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto; padding:0; font-size:12px; font-family:\5FAE\8F6F\96C5\9ED1;}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p,input{padding:0px; margin:0px; }
+ul { list-style:none; }
+img { border:0px; }
+a {text-decoration:none; }
+a {outline: none;}
+a:active {outline: none;star:expression(this.onFocus=this.blur());}
+.clearfloat{display:block;clear:both;height:0px;margin:0px;padding:0px;border:0px;}
+
+.container{width:100%;margin:0 auto;}
+
+/*广告图*/
+.banner{overflow:hidden;text-align:center;}
+.banner img{margin:0;}    
+    
+/*内容部分*/
+.container .content{width:1190px;margin:0 auto;position:relative;}
+
+.zong{background:#f2f2f2;width:100%;min-width:1190px;margin:0 auto;}
+/*leftcontent*/         
+.sort{width:290px;height:auto;z-index:20;font-family:\5FAE\8F6F\96C5\9ED1;float:left;}
+.sort .sort-ti{height:60px;font:14px/35px \5fae\8f6f\96c5\9ed1;color:#fff;padding-left:30px}
+.sort .sort-list{min-height:600px;padding:0;background:url(../images/index_img_01.png);}
+.sort .sort-list ul{height:auto;width:290px;}
+.sort .sort-list li{padding:0;width:260px;height:40px;float:left;border-bottom:1px dotted #d2d2d2;margin:0 0 0 20px;}
+.sort .sort-list li .li_title{display:block;margin:10px 15px;font-weight:bold;text-align:center;padding:0;font-size:16px;}
+.sort .sort-list li a{display:block;width:230px;position:relative;color:#000;line-height:28px;font-size:15px;padding-left:30px;margin:7px 15px;cursor:pointer;}
+.sort .sort-list li a img{float:right;margin:8px 15px;*position:absolute;top:-5px;right:0px;}
+.sort .sort-list li a span{color:#999999;display:block;height:30px;width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.sort .sort-list li.hover{background:url(../images/index_img_01.png) repeat;}           
+.sort .sort-list li.hover2{background:url(../images/index_img_01.png) repeat;background-size:290px 40px;width:287px;border-left:solid 3px #439d97;margin:0;}
+.sort .sort-list li.hover a{color:#439d97;}
+      
+.sort .sort-list ul ul{display:none;position:absolute;top:60px;left:210px;}
+.sort .sort-list ul li.hover ul{background:#fff;border:1px solid #439d97;left:290px;margin-top:-60px;width:200px;z-index:19;position:absolute;height:598px;overflow:hidden}
+.sort .sort-list ul li.hover ul li{height:60px;width:100px;float:left;padding:0;margin:0;border:0;text-align:center;}
+.sort .sort-list ul li.hover ul{display:block}
+.sort .sort-list ul li.hover ul li a{display:block;height:30px;width:100px;line-height:30px;font-size:14px;border-bottom:0;margin:0;padding:0;color:#333;}
+.sort .sort-list ul li.hover ul li a:hover{background-position:15px -181px;color:#439d97;}
+
+/*leftcontent*/
+/*rightcontent*/
+.content .content_right{background:#fff;float:left;margin-left:20px;width:860px;padding:10px;text-align:center;}
+.content .content_right ul li{border:solid 1px #d2d2d2;width:273px;float:left;margin:10px 3px 10px 7px;}
+.content .content_right ul li a{color:#363d40;display:block;}
+.content .content_right ul li a .right_title{margin:15px 10px;display:block;font-size:14px;width:250px;height:20px;overflow:hidden;text-align:left;}
+.content .content_right ul li a span{color:#b4bbbf;display:inline-block;margin-bottom:10px;*margin:0;}
+.content .content_right ul li a .con_lft{float:left;margin-left:10px;}
+.content .content_right ul li a .con_rgt{float:right;margin-right:10px;}
+
+.fenye{margin:20px 0 10px 0;}
+.fenye a{display:inline-block;padding:2px 8px;margin:0 10px;font-size:14px;color:#787d82;}
+.fenye a:hover{background:#369998;color:#fff;}
+.fenye a.avtive{background:#369998;color:#fff;}
+
+/*rightcontent*/

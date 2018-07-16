@@ -1,0 +1,79 @@
+.content{
+	width: 100%;
+}
+#mainForm{
+	width: 343px;
+	margin: 100px auto 0px;
+	overflow: hidden;
+}
+#toLogin{
+	color: #2b2b2b;
+}
+.rememberField{
+	margin-bottom: 30px;
+	height: 20px;
+	line-height: 20px;
+}
+.rememberField label{
+	 margin-right:7px;
+	 cursor:pointer;
+}
+.checkboxPic{width: 20px;}
+.transferField{
+	text-align: right;
+}
+#transfer{
+	margin-left: 150px;
+}
+.checkUnchk{
+	background-position:-1px -73px;
+}
+#forgetpwd{
+	margin-left: 15px; 
+}
+input.error{
+	margin-bottom: 0px;
+}
+#kapkey{
+	font-size: 16px;
+	width: 220px;
+	border: none;
+	outline: none;
+	/*height: 50px;*/
+	line-height: 22px;
+	overflow: hidden;
+/*	*height: 49px;
+	*line-height: 50px;*/
+}
+#imgKey{
+	width: 88px;
+	height: 36px;
+	float: right;
+	top: 7px;
+	overflow: hidden;
+	position: absolute;
+	margin-left: 13px;
+}
+#password{
+	width: 100%;
+	display: inline-block;
+	/*height: 50px;*/
+	line-height: 22px;
+	font-size: 16px;
+	outline: none;
+	color: #474747;
+/*	*height: 49px;
+	*line-height: 50px;*/
+}
+#password,#kapkey,#account{
+	line-height: 22px;
+	padding: 14px 0;
+	height: 22px;
+	*height: 21px;	
+}
+/*reset*/
+span.error, span.otherError{
+	display: block;
+	margin-left: 0px;
+	margin-bottom: 20px;
+}

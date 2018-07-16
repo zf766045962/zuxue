@@ -1,0 +1,10 @@
+安装说明：
+ 
+1. 全部上传到FTP
+2. 导入源码根目录下的：xuer.sql
+3. 修改application目录下的：user_config.php 数据库配置信息+修改成自己的网址
+4. 修改templates  目录下的：header.tpl.php 里面的网址改成自己的
+5. 后台地址：http://您的网址/admin.php 账号：admin 密码：19930710！
+
+
+吾爱源码 bbs.52codes.net

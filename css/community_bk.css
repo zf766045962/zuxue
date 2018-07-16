@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto; padding:0; font-size:12px; font-family:\5FAE\8F6F\96C5\9ED1;}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p,input{padding:0px; margin:0px; }
+ul { list-style:none; }
+img { border:0px; }
+a {text-decoration:none; }
+a {outline: none;}
+a:active {outline: none;star:expression(this.onFocus=this.blur());}
+.clearfloat{display:block;clear:both;height:0px;margin:0px;padding:0px;border:0px;}
+
+.container{width:1440px;margin:0 auto;background:#e9eaeb;}
+
+/*广告图*/
+.banner img{margin:0;float:left;}
+
+/*内容部分*/
+.container .content{width:1190px;margin:0 auto;}
+
+/*leftcontent*/
+.child_nav{float:left;height:60px;line-height:60px;margin-left:25px;}
+.child_nav ul li{float:left;}
+.child_nav ul li a{color:#222222;font-size:14px;font-family:\5FAE\8F6F\96C5\9ED1;}
+.child_nav ul span{float:left;*float:none;color:#c2c4c8;margin:0 20px;}
+
+.child_search{float:right;position:relative;width:220px;margin:15px 0;}
+.child_search input{border:0;}
+.child_search .child_sec_text{width:215px;height:34px;line-height:34px;background:url(../images/shequ_img_03.png) no-repeat;padding-left:5px;}
+.child_search a img{position:absolute;top:8px;*top:9px;right:10px;}
+
+.con_left{float:left;width:867px;}
+.con_left .left_rt{background:#fff;border:solid 1px #e6e6e6;box-shadow:0px 1px 2px 1px #e3e2e2;margin-bottom:15px;padding-bottom:15px;}
+
+#lib_Tab1{}
+.lib_Menubox{float:left;margin:20px 15px;width:837px;}
+.lib_Menubox ul{float:left;}
+.lib_Menubox li{float:left;padding:0 10px;height:15px;line-height:15px;border-right:solid 1px #ccc;text-align:center;font-size:14px;color:#000;cursor:pointer;margin:11px 0;}
+.lib_Menubox li.hover{cursor:pointer;color:#000;font-size:14px;padding:0 10px;}
+.lib_Menubox .fatie{float:right;display:block;width:98px;height:38px;text-align:center;line-height:38px;color:#fff;background:#369998;font-size:12px;font-family:宋体;*margin-top:-17px;}
+
+.lib_Menubox li.select_box{width:100px;text-align:center;border-right:0;background:url(../images/sanjiao.png) no-repeat right bottom;position:relative;left:25px;z-index:10;padding:0;}
+.lib_Menubox .select_box span{cursor:pointer;display:block;width:100px;text-align:center;overflow:hidden;margin-bottom:15px;}
+.lib_Menubox .select_box ul li{cursor:pointer;border:0;padding:0;}
+.lib_Menubox .son_ul{width:100px;background:#fff;border:solid 1px #ccc;z-index:999;display:none;}
+.lib_Menubox .son_ul li{display:block;width:100px;cursor:pointer;font-size:14px;padding:0;}
+
+
+.lib_Contentbox{clear:both;text-align:center;}
+.lib_Contentbox .left_rt_btm{border-top:solid 1px #e6e6e6;margin:0 15px;height:64px;line-height:64px;}
+.lib_Contentbox .left_rt_btm img{float:left;margin:10px 20px 10px 0;height:44px;width:44px;}
+.lib_Contentbox .left_rt_btm p{float:left;font-size:14px;color:#222222;}
+.lib_Contentbox .left_rt_btm .p_right{float:right;color:#999999;line-height:22px;margin:10px;}
+
+.fenye{margin:20px 0 10px 0;}
+.fenye a{display:inline-block;padding:2px 8px;margin:0 10px;font-size:14px;color:#787d82;}
+.fenye a:hover{background:#369998;color:#fff;}
+.fenye a.avtive{background:#369998;color:#fff;}
+
+/*leftcontent*/
+/*rightcontent*/
+.con_right{float:left;width:300px;background:#fff;border:solid 1px #e6e6e6;margin-left:20px;}
+.con_right .date{width:270px;background:#369998;margin:15px;}
+.con_right .date span{display:inline-block;width:107px;height:48px;text-align:center;line-height:52px;background:url(../images/shequ_img_05.png) no-repeat;margin:10px 20px;color:#242424;font-size:18px;font-weight:bold;}
+.con_right .date a{display:inline-block;color:#fff;font-size:22px;letter-spacing:5px;margin-left:30px;*position:relative;top:-5px;}
+.con_right .hot{font-size:20px;font-weight:500;margin:0 15px;color:#369897;float:left;}
+.con_right .ft_span{float:right;color:#000;display:block;font-size:12px;margin:5px 15px;}
+.con_right .hot_con{margin:15px;border-top:solid 1px #dddddd;padding-top:15px;font-size:12px;font-family:宋体;}
+.con_right .hot_con p{line-height:30px;}
+.con_right .hot_con p img{position:relative;top:2px;margin-right:3px;}
+.con_right .hot_con p.p_top{float:left;width:126px;}
+.con_right .hot_con p.p_top img{float:left;}
+.con_right .hot_con p.p_top span{display:inline-block;margin:20px 0;*margin-bottom:0px;line-height:22px;width:126px;font-size:15px;}
+.con_right .hot_con p.p_btm{line-height:30px;font-family:\5FAE\8F6F\96C5\9ED1;font-size:14px;color:#222222;line-height:35px;}
+
+
+/*rightcontent*/
+
+/*footer*/
+.footer{width:1000px;margin:0 auto;margin-top:50px;padding:30px 0;border-top:solid 1px #d9d9d9;text-align:center;}
+.footer ul{margin-left:30%;}
+.footer ul li{float:left;}
+.footer ul li a{color:#515151;font-size:14px;}
+.footer ul li a img{position:relative;top:3px;margin-right:10px;}
+.footer ul span{float:left;margin:0 10px;*float:none;color:#515151;}
+.footer p{font-size:12px;color:#515151;margin-top:15px;*margin-top:-15px;}
+
+/*return*/
+.btnimg{cursor:pointer;border:0;margin:0;padding:0;}
+#ScrollToTop{
+	position:fixed;_position:absolute;z-index:4;right:10px;bottom:0px;
+	width:50px;height:50px;display:block;background:url(../images/shequ_img_40.png) no-repeat;
+}
+#ScrollToTop.Offscreen{
+	bottom:-100px;
+}
+
+

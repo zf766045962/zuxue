@@ -1,0 +1,1 @@
+<? echo htmlspecialchars_decode($star['content'],ENT_QUOTES)?>

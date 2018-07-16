@@ -1,0 +1,73 @@
+# ------------------------------------------------------------------------------------------
+# Xweibo2.0 Apache  Rewrite 配置示例与说明
+# Rewrite功能开启可能导致网站无法访问，请谨慎使用，
+# 要使 .htaccess 文件生效 必须打开选项： AllowOverride All
+# 
+# 以下配置为默认配置，特殊的服务器，或者你的Xweibo安装在某个子目录可能需要更改
+#
+# 重要！！！
+# 如果你的网站因为开启 Rewrite 优化而导致网站无法访问，请参照如下方法进行恢复
+# 
+# 1. 关闭 与 Xweibo 相关的 Rewrite 配置： RewriteEngine off 或者 注释、删除相关规则
+# 2. 打开根目录的 index.php 将 define('R_FORCE_MODE', 0);注释去掉 ( 删除开头的 // ) 
+# 3. 进入后台，Xweibo后台>系统设置>优化设置 关闭优化
+# 4. 重新注释 index.php 中的 define('R_FORCE_MODE', 0); ( 在最前面加上 // )
+#
+# ------------------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------------------
+# 是否打开(on|off) Rewrite 功能，
+# 在打开此选项时 请在 Xweibo后台>系统设置>优化设置 中开启优化
+ RewriteEngine ON
+
+
+# ------------------------------------------------------------------------------------------
+# 禁止访问的路径,这条规则将保护站点的 以下目录和文件不能被HTTP直接访问
+ RewriteCond $1 ^(application/|templates/|cron/|config\.php$|user_config\.php$)
+ RewriteRule ^(.*)$ /deny.php [L]
+
+
+# ------------------------------------------------------------------------------------------
+# 启用个性短链接 
+# xurl.com 可能是你的虚拟主机绑定的一个别名，
+#	注意：xurl.com 只是一个示例的域名，你需要更改成你自己的短链域名
+# 这条规则将 http://xurl.com/xxxxxx 重定向到 http://sinaurl.cn/xxxxxx 
+# 你在取消这条规则的注释之前，
+#	1. 准备一个短链域名 如：xurl.com
+#	2. 确认 xurl.com 已绑定、解释到你的主机，且与你访问 Xweibo 的域名不同
+#	3. Xweibo后台>系统设置>短链域名设置 更改你的短链域名，并与以下规则条件中设置的域名相同
+
+#RewriteCond %{HTTP_HOST} ^xurl.com$
+#RewriteRule ^(.*)$ http://sinaurl.cn/$1 [L]
+
+
+# ------------------------------------------------------------------------------------------
+# 启用个性域名
+# 在以下两条规则的注释之前请在 Xweibo后台>系统设置>开启个性域名 中开启个性域名功能
+# 注如果你的服务器中 %{DOCUMENT_ROOT} 不准确，你可以用你安装 Xweibo 的绝对路径替换
+
+
+# 处理自定义个性域名 
+# 1. 可以通过类 http://demo.xweibo.cn/darkboy		访问某人微博
+# 2. 可以通过类 http://demo.xweibo.cn/2097085384		访问某人微博
+
+#RewriteRule ^([0-9]{1,})$ /index.php?m=ta&id=$1 [L]
+
+#RewriteCond $1 !^(js/|img/|css/|flash/|var/|robots\.txt$|.+\.php$|crossdomain\.xml$|favicon\.ico$|admin/$)
+#RewriteCond %{DOCUMENT_ROOT}/application/controllers/$1.mod.php !-f
+#RewriteRule ^([a-zA-Z][a-zA-Z0-9_-]{5,})$ /index.php?m=ta&_udomain=$1 [L]
+
+
+
+
+
+# ------------------------------------------------------------------------------------------
+# 普通入口 这条规则使用户可以用 美化的URL访问 Xweibo前端如: http://xxx.com/show/id-9019492199
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(admin/)
+RewriteRule ^(.*)$ /index.php/$1?%{QUERY_STRING} [NE,L]
+# ------------------------------------------------------------------------------------------
+ 

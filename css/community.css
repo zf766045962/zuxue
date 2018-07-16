@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto; padding:0; font-size:12px; font-family:\5FAE\8F6F\96C5\9ED1;}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p,input{padding:0px; margin:0px; }
+ul { list-style:none; }
+img { border:0px; }
+a {text-decoration:none; }
+a {outline: none;}
+a:active {outline: none;star:expression(this.onFocus=this.blur());}
+.clearfloat{display:block;clear:both;height:0px;margin:0px;padding:0px;border:0px;}
+
+.container{width:100%;margin:0 auto;background:#e9eaeb;}
+
+/*广告图*/
+.banner img{margin:0;float:left;}
+
+/*内容部分*/
+.container .content{width:1190px;margin:0 auto;}
+
+/*leftcontent*/
+.child_nav{float:left;height:60px;line-height:60px;margin-left:25px;}
+.child_nav ul li{float:left;}
+.child_nav ul li a{color:#222222;font-size:14px;font-family:\5FAE\8F6F\96C5\9ED1;}
+.child_nav ul span{float:left;*float:none;color:#c2c4c8;margin:0 20px;}
+
+.child_search{float:right;position:relative;width:220px;margin:15px 0;}
+.child_search input{border:0;}
+.child_search .child_sec_text{text-indent:1em;width:215px;height:34px;line-height:34px;background:url(../images/shequ_img_03.png) no-repeat;padding-left:5px;}
+.child_search a img{position:absolute;top:8px;*top:9px;right:10px;}
+
+.con_left{float:left;width:867px;}
+.con_left .left_banner{background:#fff;border:solid 1px #e6e6e6;box-shadow:0px 1px 2px 1px #e3e2e2;margin-bottom:15px;}
+.con_left .left_banner img{margin:15px;float:left;}
+.con_left .left_con{background:#fff;border:solid 1px #e6e6e6;box-shadow:0px 1px 2px 1px #e3e2e2;margin-bottom:15px;}
+.con_left .left_con .con_img{float:left;margin:15px;}
+.con_left .left_con .left_con_right{float:left;width:510px;margin:15px 0;}
+.con_left .left_con .left_con_right .con_title{display:block;background:#369998;color:#fff;width:65px;height:35px;text-align:center;line-height:35px;font-size:15px;font-weight:bold;letter-spacing:1px;}
+.con_left .left_con .left_con_right .con_con{color:#333333;font-size:16px;margin-top:10px;}
+.con_left .left_con .left_con_right .con_message{color:#9b9b9b;margin:15px 0;}
+.con_left .left_con .left_con_right .con_message span{margin-right:20px;}
+.con_left .left_con .left_con_right .con_message span.fb_name{display:inline-block;margin-right:0px;width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:relative;top:3px;*top:0;margin:0 3px;}
+.con_left .left_con .left_con_right .con_message .gz{position:relative;top:2px;margin-right:5px;}
+.con_left .left_con .left_con_right .con_message .pl{position:relative;top:3px;margin-right:5px;}
+.con_left .left_con .left_con_right .con_message .read{color:#32a5e7;}
+.con_left .left_con .left_con_right p{font-size:12px;font-family:宋体;color:#515151;line-height:22px;}
+.con_left .left_con .left_con_right .weibo{float:left;margin-top:8px;}
+.con_left .left_con .left_con_right .weibo img{float:left;}
+
+.con_left .left_rt{background:#fff;border:solid 1px #e6e6e6;box-shadow:0px 1px 2px 1px #e3e2e2;margin-bottom:15px;padding-bottom:15px;}
+.left_rt .left_rt_top{border-bottom:solid 1px #e6e6e6;margin:0 15px;}
+.left_rt .hot_title{font-size:17px;color:#333333;float:left;margin:20px 0px;}
+.left_rt .retie_right{float:right;margin:25px 0px;}
+.left_rt .retie_right span{font-size:12px;}
+.left_rt .retie_right .retie_title{color:#000;}
+.left_rt .retie_right .retie_content{color:#ffa800;}
+.left_rt .retie_right .retie_xian{color:#ccc;margin:0 10px;}
+
+.left_rt .left_rt_btm{border-bottom:solid 1px #e6e6e6;margin:0 15px;height:64px;line-height:64px;}
+.left_rt .left_rt_btm img{float:left;margin:10px 20px 10px 0;height:44px;width:44px;}
+.left_rt .left_rt_btm p{float:left;font-size:14px;color:#222222;}
+.left_rt .left_rt_btm span{float:right;color:#999999;}
+
+
+/*leftcontent*/
+/*rightcontent*/
+.con_right{float:left;width:300px;background:#fff;border:solid 1px #e6e6e6;margin-left:20px;}
+.con_right .date{width:270px;background:#369998;margin:15px;}
+.con_right .date span{display:inline-block;width:107px;height:48px;text-align:center;line-height:52px;background:url(../images/shequ_img_05.png) no-repeat;margin:10px 20px;color:#242424;font-size:18px;font-weight:bold;}
+.con_right .date a{display:inline-block;color:#fff;font-size:22px;letter-spacing:5px;margin-left:30px;*position:relative;top:-5px;}
+.con_right .hot{font-size:17px;margin:15px;margin-bottom:0;color:#333333;border-bottom:solid 1px #dddddd;padding-bottom:15px;width:270px;}
+.con_right .hot_table{width:270px;margin:0 15px;}
+.con_right .hot_table tr .td1{border-bottom:solid 1px #dddddd;height:40px;text-align:center;}
+.con_right .hot_table tr .td2{border:solid 1px #dddddd;border-top:0;border-right:0;height:40px;text-align:center;}
+
+.con_right .new{width:270px;margin:0 15px;}
+.con_right .new img{float:left;margin:15px 0 0 0;}
+.con_right .new .new_right{float:left;width:130px;margin:15px 0 0 15px;}
+.con_right .new .new_right .new_title{color:#515151;font-size:14px;}
+.con_right .new .new_right .new_con{color:#515151;font-size:12px;margin:5px 0;line-height:20px;}
+.con_right .new .new_right .now_cj{display:block;width:65px;height:25px;text-align:center;line-height:25px;background:#369998;color:#fff;}
+.con_right .new_img{float:left;margin:15px;width:270px;}
+.con_right .btm_list{width:270px;margin:0 15px;}
+.con_right .btm_list ul li{float:left;width:90px;}
+.con_right .btm_list ul li a{display:block;border-right:dotted 1px #262626;height:13px;padding:0 15px;margin:7px 0;line-height:13px;font-size:14px;color:#222222;}
+
+#lib_Tab1{width:270px;margin:15px;}
+.lib_Menubox {margin:15px 0;}
+.lib_Menubox ul{list-style:none;}
+.lib_Menubox li{float:left;width:132px;height:40px;line-height:40px;border-bottom:solid 1px #e6e6e6;text-align:center;font-size:14px;font-weight:600;color:#222222;cursor:pointer;margin:30px 0;*margin:15px 0;}
+.lib_Menubox li.hover{cursor:222222;color:black;color:#32a5e7;font-size:14px;font-weight:600;padding:0px;border:solid 1px #e6e6e6;border-bottom:0;}
+
+.lib_Contentbox{clear:both;width:270px;text-align:center;}
+.lib_Contentbox span{display:block;font-size:14px;margin:15px 0;}
+
+/*rightcontent*/
+
+/*footer*/
+.footer{width:1000px;margin:0 auto;margin-top:50px;padding:30px 0;border-top:solid 1px #d9d9d9;text-align:center;}
+.footer ul{margin-left:30%;}
+.footer ul li{float:left;}
+.footer ul li a{color:#515151;font-size:14px;}
+.footer ul li a img{position:relative;top:3px;margin-right:10px;}
+.footer ul span{float:left;margin:0 10px;*float:none;color:#515151;}
+.footer p{font-size:12px;color:#515151;margin-top:15px;*margin-top:-15px;}
+
+/*return*/
+.btnimg{cursor:pointer;border:0;margin:0;padding:0;}
+#ScrollToTop{
+	position:fixed;_position:absolute;z-index:4;right:10px;bottom:0px;
+	width:50px;height:50px;display:block;background:url(../images/shequ_img_40.png) no-repeat;
+}
+#ScrollToTop.Offscreen{
+	bottom:-100px;
+}
+
+
+
+

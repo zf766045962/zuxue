@@ -1,0 +1,3 @@
+<?php exit("Access deny");?>
+TRUNCATE TABLE `xsmart_components`;
+INSERT INTO `xsmart_components`(`component_id`,`name`,`title`,`type`,`native`,`component_type`,`symbol`,`desc`,`preview_img`,`component_cty`,`settingTpl`) VALUES ("1","列表","列表title","0","1","1","eventList","列表描述1","","test1","news_setting"),("19","新闻banner","新闻banner","","1","1","news.banner","q2123123","/kindeditor/attached/image/20140526/20140526133456_34065.jpg","test2","banner"),("20","单篇文章内容","单篇文章内容","","1","1","news.showArticle","","","test1","articleSetting"),("21","产品列表","产品列表","","1","1","product.lists","asdasdasd","","test2","productList"),("22","新的广告轮换","轮换","","1","1","news.test","模块说明","","test1","test123");

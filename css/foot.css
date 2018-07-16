@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto; padding:0; font-size:12px; font-family:\5FAE\8F6F\96C5\9ED1;}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p,input{padding:0px; margin:0px; }
+ul { list-style:none; }
+img { border:0px; }
+a {text-decoration:none; }
+a {outline: none;}
+a:active {outline: none;star:expression(this.onFocus=this.blur());}
+.clearfloat{display:block;clear:both;height:0px;margin:0px;padding:0px;border:0px;}
+
+.container{width:100%;margin:0 auto;float:left;}
+
+/*footer*/
+.footer{width:100%;min-width:1190px;background:url(../images/foot_img_02.png);background-size:auto 100%;padding-bottom:10px;}
+/*.footer{width:100%;min-width:1190px;height:295px;background:url(../images/foot_img_02.png);}*/
+.footer .foot_con{width:1190px;margin:0 auto;}
+.footer .foot_nav{float:left;margin:0;}
+.foot_con .foot_nav .foot_nav_top li{float:left;margin:30px 65px 30px 0;}
+.foot_con .foot_nav .foot_nav_top li a{font-size:16px;font-weight:bold;color:#818181;}
+.foot_con .foot_nav .foot_nav_btm{float:left;margin:0 65px 0 7px;}
+.foot_con .foot_nav .foot_nav_btm li{line-height:30px;}
+.foot_con .foot_nav .foot_nav_btm li img{position:relative;top:2px;right:5px;}
+.foot_con .foot_nav .foot_nav_btm li a{font-size:12px;font-family:宋体;color:#818181;}
+.foot_con .foot_nav .foot_nav_btm li a:hover{text-decoration:underline;}
+
+.foot_con .foot_right{float:right;margin:30px 0;}
+.foot_con .foot_right .weixin{float:left;}
+.foot_con .foot_right img{margin:10px 20px;}
+.foot_con .foot_right span{display:inline-block;height:30px;line-height:30px;width:70px;text-align:center;background:#fff;border:solid 1px #369998;color:#818181;font-size:14px;font-weight:bold;}
+.foot_con .foot_right span:hover{border:solid 1x #666;}
+.foot_con .foot_right span.ewm_title{width:139px;display:block;height:25px;background:transparent;border:0;margin:0 0 0 17px;text-align:left;}
+#weixin{border-radius:5px 0 0 5px;margin-left:18px;}
+#weibo{border-radius:0 5px 5px 0;}
+
+
+.foot_con .bottom{text-align:center;color:#818181;}
+.foot_con .bottom span{margin-left:80px;}
+
+
+.friend_link{color:#818181;width:1190px;font-size:14px;clear:both;margin-bottom:15px;text-align:center;} 
+.friend_link span{} 
+.friend_link a{color:#818181;margin-right:20px;font-size:14px;} 
+.friend_link a:hover{text-decoration:underline;}

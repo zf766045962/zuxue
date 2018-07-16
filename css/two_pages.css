@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0 auto; padding:0; font-size:12px; font-family:\5FAE\8F6F\96C5\9ED1;}
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p,input{padding:0px; margin:0px; }
+ul { list-style:none; }
+img { border:0px; }
+a {text-decoration:none; }
+a {outline: none;}
+a:active {outline: none;star:expression(this.onFocus=this.blur());}
+.clearfloat{display:block;clear:both;height:0px;margin:0px;padding:0px;border:0px;}
+
+.container{width:100%;margin:0 auto;}
+
+/*广告图*/
+.index_show{position:relative;z-index:2;width:1440px;overflow:hidden;margin:0 auto;background: #fff;}
+.bxslider{height:339px;overflow: hidden;width:100%;}
+.bxslider li{width:100%;height:339px;overflow:hidden;}
+
+.bx-controls{display: none;}
+#bx-pager{position: absolute;left:50%;bottom:2px;z-index:10;margin-left:-90px;padding-bottom: 6px;}
+#bx-pager a{float: left;width: 11px;height: 11px;text-align: center;margin:0 10px;background:url(../images/news_slideimg2.png) no-repeat;}
+#bx-pager a:hover{text-decoration: none;}
+#bx-pager .active{position: relative;background:url(../images/news_slideimg1.png) no-repeat;}
+#bx-pager .active::before{content: '';position: absolute;top:-40px;left: 25px;}
+
+
+/*内容部分*/
+.container .content{width:1190px;margin:0 auto;}
+
+/*leftmenu*/
+.lib_Menubox{width:1190px;height:38px;border-bottom:solid 2px #f5f5f5;margin-top:10px;}
+.lib_Menubox ul li{display:block;cursor:pointer;float:left;margin-right:100px;color:#333333;font-size:15px;font-weight:bold;font-family:\5FAE\8F6F\96C5\9ED1;height:40px;line-height:40px;}
+.lib_Menubox li.hover{cursor:pointer;background:url(../images/xuea_img_13.png) no-repeat;background-position:bottom;color:#439d97;}
+.lib_Menubox li:hover{cursor:pointer;background:url(../images/xuea_img_13.png) no-repeat;background-position:bottom;color:#439d97;}
+.lib_Menubox li a{color:#333333;}
+.lib_Menubox li.hover a{color:#369998;}
+.lib_Menubox li a:hover{color:#369998;}
+
+.lib_Contentbox{margin-bottom:20px;}
+/*leftmenu*/
+
+.tab_content{width:1215px;margin:0 auto;float:left;}
+.tab_content ul li{float:left;width:280px;border:solid 1px #eaeaea;margin:20px 20px 0 0;overflow:hidden;}
+.tab_content ul li a{display:block;color:#333333;*border:solid 1px #fff;*margin-bottom:10px;}
+.tab_content ul li a h4{margin:10px 0 20px 5px;font-size:14px;}
+.tab_content ul li a span{color:#808080;float:left;display:inline-block;margin:0 0 10px 10px;}
+.tab_content ul li a .list_img1{float:left;position:relative;top:2px;left:5px;}
+.tab_content ul li a .list_img2{float:right;margin:7px 5px 0 0;}
+
+
+.content .content_top{border-bottom:solid 1px #b3b3b3;}
+
+.content_top .con_top_left{float:left;margin:15px 0;width:131px;height:130px;}
+.content_top .con_top_right{float:right;width:1030px;margin:13px 0;}
+.content_top .con_top_right h3{color:#439d97;font-size:16px;margin:10px 0;}
+.content_top .con_top_right p{color:#4d4d4d;line-height:25px;font-size:14px;}
+
+.news_back{background:#f0f2f4;width:100%;}
+.content_news{background:#f0f2f4;width:1190px;margin:0 auto;}
+.content_news .school_news{font-size:20px;font-weight:500;float:left;margin-top:30px;}
+.content_news .all{float:left;color:#909192;font-size:14px;margin:35px 0 0 10px;}
+
+.content_news .schoolnews_left{float:left;width:600px;margin:5px 0 20px 0;}
+.schoolnews_left .leftnews_content{margin:10px 0;}
+.schoolnews_left .news_title{color:#000000;font-size:14px;}
+.schoolnews_left .news_content{color:#606162;font-size:12px;line-height:30px;width:600px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+
+.content_news .schoolnews_right{float:right;width:535px;height:172px;border-left:solid 2px #dcdedf;margin:5px 0 20px 0;}
+.content_news .schoolnews_right .news_img{width:271px;height:172px;margin:0px 15px 0 30px;float:left;}
+.content_news .schoolnews_right .newsright_content{float:left;width:200px;}
+.content_news .schoolnews_right .newsright_content h3{color:#369998;margin:10px 0;}
+.content_news .schoolnews_right .newsright_content p{line-height:25px;text-indent:2em;font-family:宋体;color:#323232;}
+.content_news .schoolnews_right .newsright_content a{float:right;font-size:12px;font-family:宋体;color:#369998;}
+
+
+.container .friend_line{overflow:hidden;border-top:dashed 1px #bbbbbb;border-bottom:dashed 1px #bbbbbb;height:40px;line-height:40px;margin:40px auto;}
+.friend_line span{color:#888888;font-size:12px;font-weight:bold;}
+.friend_line a{color:#888888;font-size:12px;margin-right:20px;}
+
+
+
+.footer{width:100%;min-width:1190px;height:50px;line-height:50px;background:url(../images/foot_img_02.png);}
+.footer .foot_con{width:1190px;margin:0 auto;text-align:center;}

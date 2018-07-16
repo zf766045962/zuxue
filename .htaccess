@@ -1,0 +1,19 @@
+Options +FollowSymlinks All -Indexes
+
+
+rewriteEngine on
+
+
+rewriteBase /
+
+
+RewriteCond %{HTTP_HOST} ^xuer.com$
+
+
+RewriteRule ^(.*)$ http://www.xuer.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.xuer.com$
+
+
+ErrorDocument 403 /leapsoulcn403.html 
+ErrorDocument 404 /404/404.html 

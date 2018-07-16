@@ -1,0 +1,452 @@
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: table;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{ *zoom:1; }
+
+
+.content_par {
+	
+}
+
+.content {
+	width: 1040px;
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+/*============== 搜索框[[ ================*/
+.c_nav {
+	width: 100%;
+	margin: -5px 0 28px 0;
+	height: 39px;
+}
+
+.c_search {
+	float: right;
+	padding-right: 12px;
+	height: 39px;
+
+}
+.c_nav #scbar_txt {
+        border:1px solid #d7d7d7;
+        border-right: none;
+        float: left;
+        height: 37px;
+        width: 199px;
+        background-color: #fff;
+}
+
+.c_nav #scbar_btn {
+	float: left;
+	width: 45px;
+	height: 39px;
+	border: 1px solid #d7d7d7;
+	border-left: none;
+	background: url('http://bbs.res.meizu.com/resources/php/bbs/static/image/common/index.png') no-repeat -168px 5px #fff;
+}
+
+.c_nav #searchTip {
+    top: 38px !important;
+}
+/*============== 搜索框]] ================*/
+
+/*============== 分类模块[[ ================*/
+.c_list {
+	margin-bottom: 28px;
+	background-color: #fff;
+	overflow: hidden;
+    border: 1px solid #E6E6E6;
+    box-shadow: 1px 2px 3px #CECCCC;
+}
+
+.c_list h3 {
+	height: 66px;
+	line-height: 66px;
+	border-bottom: 1px solid #f2f2f2;
+	font-size: 18px;
+	color: #515151;
+	padding-left: 38px;
+}
+
+.c_cate {
+	margin-right: -3px;
+}
+
+
+.c_cate li {
+    float: left;
+}
+
+.c_cate li a {
+    float: left;
+	width: 346px;
+	height: 268px;
+	background-color: #fff;
+}
+
+.c_cate li {
+	border-right: 1px solid #f2f2f2;
+}
+
+.c_cate li a:hover {
+	background-color: #fcfcfc;
+}
+
+.c_cate li a:hover strong  {
+	color: #3ab3ff;
+}
+
+.c_cate .cc_logo {
+	position: relative;
+	display: block;
+	width: 97px;
+	height: 97px;
+	margin: 42px auto 0 auto;
+	/*background: url('../../../static/image/common/index.png') no-repeat 0 0 #fff;*/
+}
+
+.c_cate .ccl_1 { background-position: 0 -36px; }
+.c_cate .ccl_2 { background-position: -97px -36px; }
+.c_cate .ccl_3 { background-position: -194px -36px; }
+.c_cate .ccl_4 { background-position: 0 -133px; }
+.c_cate .ccl_5 { background-position: -97px -133px; }
+.c_cate .ccl_6 { background-position: -194px -133px; }
+.c_cate .ccl_7 { background-position: 0 -230px; }
+.c_cate .ccl_8 { background-position: -97px -230px; }
+.c_cate .ccl_9 { background-position: -194px -230px; }
+
+.c_cate .news_num {
+	position: absolute;
+	top: 7px;
+	left: 104px;
+	width: 55px;
+	height: 28px;
+	background: url("http://bbs.res.meizu.com/resources/php/bbs/static/image/common/index.png") no-repeat 0 0;
+	color: #fff;
+	text-indent: 10px;
+	font-size: 12px;
+}
+
+.c_cate .act_2 { background-position: -60px 0; width: 47px;}
+.c_cate .act_3 { background-position: -112px 0; width: 47px;}
+
+.c_cate strong {
+	display: block;
+	margin-top: 26px;
+	font-size: 16px;
+	color: #515151;
+	text-align: center;
+}
+
+.c_cate p {
+	font-size: 12px;
+    color: #919191;
+    text-align: center;
+    margin: 14px auto 0 auto;
+    line-height: 18px;
+    width: 252px;
+}
+/*============== 分类模块[[ ================*/
+
+/*============== 活动版块[[ ================*/
+.c_activity {
+	background-color: #fff;
+	height: 285px;
+	margin-bottom: 27px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 1px 2px 3px #CECCCC;
+}
+
+.ca_left_info {
+	float: left;
+	width: 327px;
+	height: 228px;
+	padding-top: 53px;
+    padding: 57px 13px 0 7px;
+	text-align: center;
+}
+
+.ca_left_info:hover{
+    background-color: #FCFCFC
+}
+
+.ca_left_info strong {
+	display: block;
+	font-size: 16px;
+	color: #515151;
+	margin: 31px 0 13px 0;
+}
+
+.ca_left_info p {
+	font-size: 12px;
+	color: #919191;
+}
+
+.ca_banner {
+	float: left;
+	margin-top: 35px;
+}
+.ca_diy_pic {
+    width: 645px;
+    height: 213px;
+	float: left;
+	margin-top: 38px;
+}
+/*============== 活动版块[[ ================*/
+
+/*============== 服务与管理[[ ================*/
+.service_par {
+	background-color: #fff;
+	width: 100%;
+    margin-top: 43px;
+}
+
+.service {
+	width: 1040px;
+	height: 267px;
+	margin: 0 auto;
+}
+
+.service_cate {
+	float: left;
+	width: 674px;
+	height: 224px;
+	padding-top: 43px;
+}
+
+.community {
+	width: 350px;
+	border-left: 1px solid #f2f2f2;
+}
+
+.service_cate h3 {
+	font-size: 18px;
+	color: #515151;
+	padding-left: 48px;
+}
+
+.service_cate .sc_list {
+	margin-top: 53px;
+    padding-left: 21px;
+}
+
+.service_cate li {
+    float: left;
+}
+
+.service_cate li a{
+	float: left;
+	width: 160px;
+    height: 98px;
+	text-align: center;
+	border-right: 1px solid #f2f2f2;
+}
+
+.service_cate li a:hover {
+    background-color: #FCFCFC;
+}
+
+.service_cate .last a {
+	border-right: none;
+}
+
+.service_cate li i {
+	display: block;
+	margin: 5px 0 20px 50px;
+	*margin-left: 0px;
+	width: 60px;
+	height: 50px;
+	/*background: url(../../../static/image/common/discuz.png) no-repeat 0 0;*/
+    background: url('http://bbs.res.meizu.com/resources/php/bbs/static/image/common/discuz.png') no-repeat 0 0;
+}
+
+.service_cate li .sc_1 { background-position: 10px 0; }
+.service_cate li .sc_2 { background-position: -57px 0; }
+.service_cate li .sc_3 { background-position: -134px 0; }
+.service_cate li .sc_4 { background-position: -210px 0; }
+.service_cate li .sc_5 { background-position: -282px 0; }
+.service_cate li .sc_6 { background-position: -343px 0; }
+
+.service_cate li:hover .sc_1 { background-position: 10px -55px; }
+.service_cate li:hover .sc_2 { background-position: -57px -55px; }
+.service_cate li:hover .sc_3 { background-position: -134px -56px; }
+.service_cate li:hover .sc_4 { background-position: -210px -56px; }
+.service_cate li:hover .sc_5 { background-position: -282px -56px; }
+.service_cate li:hover .sc_6 { background-position: -343px -55px; }
+
+.service_manage {
+    display: block;
+	margin: 5px 0 8px 50px;
+	*margin-left: 0px;
+	width: 60px;
+	height: 60px;
+	background-color: #f2f2f2;
+}
+
+.service_cate li span {
+	color: #919191;
+    font-size: 13px;
+}
+
+.service_cate li:hover span {
+	color: #3ab3ff;
+}
+
+/*============== 服务与管理]] ================*/
+
+/*============== PC 跟 触屏 端切换[[ ================*/
+.foot_user_agent {
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 25px 0;
+	background-color: #fff;
+}
+
+.foot_ua_change {
+	width: 170px;
+	margin: 0 auto;
+}
+
+.foot_ua_change a {
+	float: left;
+	width: 52px;
+	background: url('http://bbs.res.meizu.com/resources/php/bbs/static/image/common/index.png') no-repeat 0 0;
+	padding-left: 23px;
+	font-size: 12px;
+	color: #919191;
+}
+
+.foot_ua_change .pc {
+	background-position: -285px 3px;
+	border-right: 1px solid #e8e8e8;
+	margin-right: 15px;
+}
+
+.foot_ua_change .mobile {
+	background-position: -289px -15px;
+	padding-left: 15px;
+}
+/*============== PC 跟 触屏 端切换]] ================*/
+
+/*============== 弹出层样式[[ ================*/
+#question_dialog {
+    display: none;
+}
+
+.question_nav a {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    float: left;
+    /*width: 50px;*/
+    height: 18px;
+    padding: 10px 30px;
+    border-top: 2px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.question_nav a.act {
+    border-top: 2px solid #FFB03D;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+.question_nav a:hover {
+    text-decoration: underline;
+}
+
+.question_list {
+    padding: 15px 0 15px 30px;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+}
+
+.question_list li {
+    line-height: 40px;
+}
+
+.question_list li a {
+    color: #32a5e7;
+}
+
+.question_page {
+    margin: 15px 15px 0 0;
+    height: 26px;
+}
+
+.question_list .pg {
+    float: right;
+}
+
+.question_list .pg a, .question_list .pg .act, .question_list .pgb a, .question_list .pg label {
+    font-size: 15px;
+    width: 10px;
+    height: 24px;
+    padding: 0 7px;
+    line-height: 24px;
+}
+
+.pg .act {
+    color: #FFFFFF;
+    background-color: #32a5e7;
+    border: 1px solid #32a5e7;
+}
+
+.question_btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.question_btn button {
+    background-color: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px 2px 2px 2px;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+}
+
+.question_btn button:hover {
+    background-color: #ebebeb;
+}
+
+.question_btn .closeDialog {
+    background-color: #32a5e7;
+    border: 1px solid #32a5e7;
+    color: #fff;
+}
+
+.question_btn .closeDialog:hover {
+    background-color: #2799db;
+    border: 1px solid #309ddb;
+}
+/*============== 弹出层样式]] ================*/
+
+/* 重置样式 */
+.block {
+    margin: 0;
+}
+
+.temp {
+    margin: 0;
+}
+
+.frame, .frame-tab {
+    background: none;
+    border: none;
+    margin-bottom: 0;
+}

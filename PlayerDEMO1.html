@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>PlayerDEMO.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body style="margin:0px;">
+  
+  
+  <div id="playerDiv">
+ 
+   
+    
+    <div style="width:640px; height:360px; margin:30px auto;"><!--
+    
+  <script src="http://p.bokecc.com/player?vid=54CFA86AA520A1E99C33DC5901307461&siteid=10907EAAA46D87A6&autoStart=false&width=600&height=490&playerid=BB2B7EB485387F9E&playertype=1" type="text/javascript"></script>
+    -->
+    
+    <script src="http://p.bokecc.com/player?vid=AE8AFB243339BC7F9C33DC5901307461&siteid=159B280E26968646&autoStart=false&width=600&height=490&playerid=EC7AF4CC912E7739&playertype=1" type="text/javascript"></script>
+   
+    </div>
+  </div>  
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    
+    <div>
+        <a href="javascript:switchScreen()">mini/normal</a>
+        <a href="javascript:ccplayer.start()">start</a>
+        <a href="javascript:ccplayer.pause()">pause</a>
+        <a href="javascript:ccplayer.resume()">resume</a>
+        <a href="javascript:ccplayer.seek(10)">seek(10)</a>
+        <a href="javascript:ccplayer.setVolume(3)">setVolume(3)</a>
+        <a href="javascript:ccplayer.setVolume(5)">setVolume(5)</a>
+        <a href="javascript:ccplayer.setQuality(0)">setQuality(0)</a>
+        <a href="javascript:ccplayer.setQuality(1)">setQuality(1)</a>
+        <a href="javascript:ccplayer.setQuality(2)">setQuality(2)</a>
+        <a href="javascript:trace(ccplayer.getPosition())">getPosition</a>
+        <a href="javascript:trace(ccplayer.spark_player_position())">spark_player_position</a>
+        <a href="javascript:trace(ccplayer.getDuration())">getDuration</a>
+        <a href="javascript:trace(ccplayer.getValidQuality())">getValidQuality</a>
+        
+    </div>
+    <script type="text/javascript"><!--
+    var div = document.getElementById("playerDiv");
+    var miniScreen = false;
+
+    function switchScreen() {
+        if (miniScreen) {
+            div.style.width = 300;
+            div.style.height = 220;
+        } else {
+            div.style.width = 400;
+            div.style.height = 350;
+        }
+        miniScreen = !miniScreen;
+    }
+
+    switchScreen();
+
+	
+
+
+
+
+function thisMovie(movieName){  
+　　if (window.document[movieName]){  
+　　　return window.document[movieName];　　  
+}else if (navigator.appName.indexOf("Microsoft")==-1){  
+　　　if (document.embeds && document.embeds[movieName])   
+　　 return document.embeds[movieName];　   
+ }else{　　   
+ return document.getElementById(movieName);　  
+　}　
+}
+
+
+
+    function trace(msg) {
+        console.info(msg);
+    }
+
+    var ccplayer;
+
+    function on_cc_player_init(vid, objectID) {
+        ccplayer = thisMovie(objectID);
+		//alert(ccplayer);
+        console.info("on_cc_player_init", vid, objectID);
+        if (ccplayer) {
+           
+            var config = {};            
+
+            //关闭右侧菜单
+            config.rightmenu_enable = 0;
+            config.control_enable = 1;//是否显示控制条        
+
+            
+            config.on_player_seek = "custom_seek";
+            config.on_player_ready = "custom_player_ready";
+            config.on_player_start = "custom_player_start";
+            config.on_player_pause = "custom_player_pause";
+            config.on_player_resume = "custom_player_resume";
+            config.on_player_stop = "custom_player_stop";
+            config.on_player_buffering = "custom_player_buffering";
+            config.on_player_playerror = "custom_player_playerror";
+            
+           
+            
+            config.player_plugins = { // 插件名称 : 插件参数
+                Subtitle: {
+                   // url: "http://dev.bokecc.com/static/font/example.utf8.srt",                    
+                    url : "http://www.bokecc.com/apidemo/bj.srt",
+                    size: 24,
+                    color: 0xFFFFFF,
+                    surroundColor: 0x3c3c3c,
+                    bottom: 0.15,
+                    font: "Helvetica",
+                    code: "utf-8"
+                }
+               
+            };
+
+          
+            ccplayer.setConfig(config);
+
+            console.info("setConfigSuccess");
+        } else {
+            console.info("setConfigFailed");
+        }
+    }
+
+   
+
+    /**
+     * 自定义函数示例
+     *
+     * */
+
+    function custom_player_ready() {
+        console.info("custom_player_ready");
+    }
+
+    function custom_player_start() {
+        console.info("custom_player_start");
+    }
+
+    function custom_player_pause() {
+        console.info("custom_player_pause");
+    }
+
+    function custom_player_resume() {
+        console.info("custom_player_resume");
+    }
+
+    function custom_seek(from, to) {
+        console.info("custom_seek",from,to);
+    }
+
+    function custom_player_stop() {
+        console.info("custom_player_stop");
+    }
+
+    function custom_player_buffering(ﬂag) {
+        console.info("custom_player_buffering",ﬂag);
+    }
+
+    function custom_player_playerror() {
+        console.info("custom_player_playerror");
+    }
+   
+  
+
+    --></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<?php exit("Access deny");?>
+TRUNCATE TABLE `xsmart_page_manager`;
+INSERT INTO `xsmart_page_manager`(`id`,`page_id`,`component_id`,`title`,`position`,`sort_num`,`in_use`,`isNative`,`param`) VALUES ("1","1","19","aaa","1","2","1","0","{\"link\":\"http:\\/\\/1111\",\"src\":\"\",\"desc\":\"123123\",\"page_type\":\"0\",\"show_num\":\"11\"}"),("2","1","1","列表哈哈","1","1","1","0","{\"link\":\"http:\\/\\/\",\"src\":\"\",\"desc\":\"\\u963f\\u65af\\u987f\",\"page_type\":\"0\",\"show_num\":\"15\"}"),("3","2","22","1231","1","3","1","0","{\"link\":\"http:\\/\\/111\",\"src\":\"\",\"desc\":\"1111\",\"page_type\":\"1\",\"show_num\":\"10\"}");
